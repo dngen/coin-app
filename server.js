@@ -18,7 +18,7 @@ app.post('/', function(req, res) {
        let coins = JSON.parse(body)
        for(var coin of coins) {
           if(coin.symbol ==  query) {
-            res_txt = "Coin: " + coin.name + " (" + coin.symbol + "\nPrice:\n≈ " + coin.price_usd + " USD\n≈ ";
+            res_txt = "Coin: " + coin.name + " (" + coin.symbol + "Price: " + coin.price_usd + " USD";
             break;
           }
        }
